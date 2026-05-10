@@ -47,6 +47,15 @@
 ```text
 .
 ├── documents/          # AIで生成した定款や書類のテンプレート
+|    ├── 01_articles_of_incorporation.md  # 定款ドラフト
+|    ├── 02_business_objectives.md        # 事業目的メモ
+|    ├── 03_registration_forms/           # 添付書類テンプレート
+|    │   ├── acceptance_of_office.md      # 就任承諾書
+|    │   ├── certificate_of_payment.md    # 払込証明書
+|    │   └── location_decision.md         # 本店所在地決定書
+|    └── 04_post_registration/            # 設立後のタスク
+|    ├── bank_account_opening.md      # 銀行口座開設リサーチ
+|    └── tax_notifications.md         # 税務署への届出項目
 ├── scripts/            # 手続き自動化やリサーチ用メモ
 └── README.md
 
