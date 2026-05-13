@@ -26,7 +26,7 @@
 ### Phase 1: Preparation (設計)
 - [ ] 会社基本情報の決定（商号、本店所在地、資本金、決算期）
 - [ ] AIを活用した事業目的（Business Objectives）の策定
-- [ ] 法人実印（代表社員之印）の発注
+- [ ] 法人実印（代表社員之印）の発注（詳細は [Setup Guide](./docs/setup_guide.md) 参照）
 
 ### Phase 2: Build (書類作成)
 - [ ] AIによる定款ドラフトの生成
@@ -35,7 +35,7 @@
 
 ### Phase 3: Deploy (電子申請)
 - [ ] 法人設立ワンストップサービスへのログイン
-- [ ] 電子定款のアップロードと電子署名
+- [ ] 電子定款のアップロードと電子署名（詳細は [Setup Guide](./docs/setup_guide.md) 参照）
 - [ ] 登録免許税（6万円）の納付（ペイジー等）
 
 ### Phase 4: Post-Deployment (事後処理)
@@ -54,8 +54,10 @@
 |    │   ├── certificate_of_payment.md    # 払込証明書
 |    │   └── location_decision.md         # 本店所在地決定書
 |    └── 04_post_registration/            # 設立後のタスク
-|    ├── bank_account_opening.md      # 銀行口座開設リサーチ
-|    └── tax_notifications.md         # 税務署への届出項目
+|        ├── bank_account_opening.md      # 銀行口座開設リサーチ
+|        └── tax_notifications.md         # 税務署への届出項目
+├── docs/               # 詳細ガイド・マニュアル
+│   └── setup_guide.md  # 物理準備と電子署名手順
 ├── scripts/            # 手続き自動化やリサーチ用メモ
 └── README.md
 ```
