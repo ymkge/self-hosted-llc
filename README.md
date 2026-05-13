@@ -50,6 +50,7 @@
 |    ├── 01_articles_of_incorporation.md  # 定款ドラフト
 |    ├── 02_business_objectives.md        # 事業目的メモ
 |    ├── 03_registration_forms/           # 添付書類テンプレート
+|    │   ├── README.md                    # 資料作成の注意点など
 |    │   ├── acceptance_of_office.md      # 就任承諾書
 |    │   ├── certificate_of_payment.md    # 払込証明書
 |    │   └── location_decision.md         # 本店所在地決定書
