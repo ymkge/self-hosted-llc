@@ -61,8 +61,9 @@
 |        ├── bank_account_opening.md      # 銀行口座開設リサーチ
 |        └── tax_notifications.md         # 税務署への届出項目
 ├── docs/               # 詳細ガイド・マニュアル
-│   ├── setup_guide.md          # 物理準備と電子署名手順
-│   └── post_deployment.md      # 設立後の届出・口座開設手順
+│   ├── setup_guide.md                  # 物理準備と電子署名手順
+│   ├── post_deployment.md              # 設立後の届出・口座開設手順
+│   └── corporate_investment_guide.md   # 法人の証券口座開設・運用ガイド
 ├── scripts/            # 手続き自動化やリサーチ用メモ
 └── README.md
 ```
