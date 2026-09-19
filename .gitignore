@@ -19,6 +19,13 @@ Thumbs.db
 private/
 secrets/
 tmp/
+books/
+manuscripts/
+
+# --- E-book manuscript files (KDP Exclusivity Protection) ---
+*.epub
+*.kpf
+*.mobi
 
 # --- Media & Scanned Data ---
 # 実印の印影、通帳コピー、身分証、マイナンバー関連
