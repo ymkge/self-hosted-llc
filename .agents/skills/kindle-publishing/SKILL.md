@@ -118,6 +118,22 @@ def convert_ascii_boxes_to_html(content):
         return "\n".join(html)
 
     return box_pattern.sub(replacer, content)
+
+def fix_japanese_bold(text):
+    """
+    CommonMarkパーサーで日本語の括弧類（『』「」等）の周囲で太字（**）が残る問題を解消
+    """
+    code_blocks = []
+    def save_code(m):
+        code_blocks.append(m.group(0))
+        return f"__CODE_BLOCK_{len(code_blocks)-1}__"
+    
+    protected = re.sub(r'```.*?```', save_code, text, flags=re.DOTALL)
+    protected = re.sub(r'`[^`\n]+`', save_code, protected)
+    protected = re.sub(r'\*\*([^\n*]+?)\*\*', r'<strong>\1</strong>', protected)
+    for i, cb in enumerate(code_blocks):
+        protected = protected.replace(f"__CODE_BLOCK_{i}__", cb)
+    return protected
 ```
 
 ---
